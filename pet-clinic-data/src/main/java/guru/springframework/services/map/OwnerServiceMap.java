@@ -2,12 +2,14 @@ package guru.springframework.services.map;
 
 import guru.springframework.model.Owner;
 import guru.springframework.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 /**
  * Created by maikbartels on 2020.07.20
  */
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
