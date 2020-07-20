@@ -1,14 +1,14 @@
 package guru.springframework.services.map;
 
 import guru.springframework.model.Owner;
-import guru.springframework.services.CrudService;
+import guru.springframework.services.OwnerService;
 
 import java.util.Set;
 
 /**
  * Created by maikbartels on 2020.07.20
  */
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
     public Set<Owner> findAll() {
@@ -33,5 +33,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
     @Override
     public void deleteById(Long id) {
         super.deleteById(id);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 }
