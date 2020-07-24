@@ -13,7 +13,7 @@ import java.util.Set;
  * Created by maikbartels on 2020.07.24
  */
 @Service
-@Profile("springdatajpa")
+@Profile("ç")
 public class PetTypeSDJpaService implements PetTypeService {
 
     private final PetTypeRepository petTypeRepository;
