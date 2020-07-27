@@ -40,11 +40,11 @@ class OwnerMapServiceTest {
 
     @Test
     void saveExistingId() {
-        long id = 2L;
+        Long id = 2L;
         Owner owner2 = Owner.builder().id(id).build();
         Owner savedOwner = ownerMapService.save(owner2);
 
-        assertEquals(id, savedOwner.getId());
+        assertEquals(id,savedOwner.getId());
     }
 
     @Test
